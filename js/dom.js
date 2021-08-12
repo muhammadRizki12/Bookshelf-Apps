@@ -57,7 +57,7 @@ function makeBook(title, author, year, isComplete) {
   return container;
 }
 
-// Create Button
+// Created Button
 function createdButton(buttonTypeClass, eventListener) {
   const button = document.createElement('button');
   button.classList.add(buttonTypeClass);
@@ -96,8 +96,6 @@ function createButtonUncompleted() {
   buttonUncompleted.innerText = 'Belum Selesai di Baca';
   return buttonUncompleted;
 }
-
-// ------------------------------
 
 function addBookToCompleted(bookElement) {
   const listCompleted = document.getElementById(COMPLETED_LIST);
@@ -169,7 +167,7 @@ function searchBookByTitle() {
   for (i of item) {
     const title = i.firstElementChild.textContent.toLowerCase();
     if (keyInput === title) {
-      i.style.color = '';
+      i.style.display = 'block';
     } else if (keyInput === '') {
       i.style.display = '';
     } else {

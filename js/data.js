@@ -1,7 +1,7 @@
-// Key
+// Key Local Storage
 const STORAGE_KEY = 'BOOKSELF_APPS';
 
-// Temporary
+// Temporary data
 let books = [];
 
 function isStorageExist() {
@@ -71,7 +71,6 @@ function refreshDataFromBooks() {
   let listCompleted = document.getElementById(COMPLETED_LIST);
 
   for (book of books) {
-    // function makeBook(title, author, year, isComplete) {
     const newBook = makeBook(book.title, book.author, book.year, book.isComplete);
     newBook[BOOK_ITEMID] = book.id;
 

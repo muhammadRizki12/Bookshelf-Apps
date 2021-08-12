@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     searchBookByTitle();
   });
 
+  // Change text
   const checkBox = document.getElementById('inputBookIsComplete');
-
   checkBox.addEventListener('change', () => {
     checkFinished();
   });
